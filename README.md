@@ -1,4 +1,4 @@
-# Soil Monitoring System with ESP32
+# Pond Monitoring System with ESP32
 
 This project is a pond measuring system built using the ESP32 microcontroller, which reads data from multiple sensors and displays the results on an LCD. The system connects to a WiFi network to send data to a remote server via HTTP requests.
 
@@ -61,6 +61,6 @@ The LCD screen will display the following information:
 
 ## Data Format
 Data is sent to the server using the following GET request format:
-cp```
+```cp
 https://your-server-url.com/data.php?
 Temp=temperature_value&PH=ph_value&Tur=turbidity_value&Id=device_id
