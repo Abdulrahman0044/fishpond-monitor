@@ -9,7 +9,7 @@ This project is a pond measuring system built using the ESP32 microcontroller, w
 - Displays sensor readings (Temperature, pH, Turbidity) on a 4-line LCD screen
 - Connects to a WiFi network and sends data to a remote server
 
-## Components
+## Components Used
 - **ESP32 Microcontroller**
 - **DallasTemperature Sensor** (for temperature)
 - **pH Sensor** (analog)
@@ -61,3 +61,6 @@ The LCD screen will display the following information:
 
 ## Data Format
 Data is sent to the server using the following GET request format:
+cp```
+https://your-server-url.com/data.php?
+Temp=temperature_value&PH=ph_value&Tur=turbidity_value&Id=device_id
